@@ -19,7 +19,8 @@ class Load
   */
   public function runProject()
   {
-
+    //Inicialização do componente Router;
+    \Core\Router::getRouter()->runRouter();
   }
 }
 ?>
