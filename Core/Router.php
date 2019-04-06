@@ -67,7 +67,11 @@ class Router {
         //Carregando classe controller e action
         if (\is_string($func)) {
           //repassando os paramantros enviandas pela url;
-          $params = $arg;
+          if (!empty($arg)) {
+            $params = $arg;
+          } else {
+            $params = array();
+          }
           //Transformando o indices enviado pela funções get ou post pelo arquivo /Router/web.php
           $controllerAndAction = explode('@', $func);
           //Armazenando e colocando o namespace no controller;

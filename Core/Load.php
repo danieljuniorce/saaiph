@@ -12,7 +12,6 @@ class Load
     }
     return $inst;
   }
-
   /*
   function de gerenciamento de carregamento dos
   componentes essencias para funcionamento do project;
