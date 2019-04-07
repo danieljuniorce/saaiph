@@ -37,6 +37,6 @@ class Source
 
   public function asset($component)
   {
-    echo $_ENV['HOST'].'Resources/'.$component.'"/>';
+    echo $_ENV['HOST'].'Resources/'.$component.'"';
   }
 }

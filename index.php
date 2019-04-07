@@ -9,7 +9,7 @@
     $dotenv = Dotenv\Dotenv::create ( __DIR__ );
     $dotenv->load();
 
-    //Carregando Database
+    //Carregando configuração Database
     \Database\Config::getInstance();
 
     //Instanciando a classe Load;

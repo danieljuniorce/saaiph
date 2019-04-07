@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+body {
+  background: linear-gradient(90deg, #DDDDDD);
+}
+
+h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 60pt;
+}
