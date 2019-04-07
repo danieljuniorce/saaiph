@@ -32,6 +32,7 @@ class Router {
   public function loadUrl()
   {
     $prefix = '\Controllers\\';
+    $return = 0;
 
     //GET url enviado e configurado pelo arquivo .htaccess;
     $url = (isset($_GET['url']) ? $_GET['url'] : '');
@@ -81,13 +82,20 @@ class Router {
 
           //Instanciando a classe e action e paramentros das Classes Controllers
           call_user_func_array(array($controller, $action), $params);
+          $return = 1;
         } else {
           //Função simples de manipulação via Router/web.php;
           $func($arg);
+          $return = 1;
         }
         //encerrando o foreach;
         break;
+      } else {
+
       }
+    }
+    if ($return === 0) {
+      \Core\Source::template('404');
     }
   }
   //Armazenando em array os link enviados por GET;

@@ -8,4 +8,8 @@ class homeController extends Source
   {
     Source::template('welcome');
   }
+  public function teste()
+  {
+    Source::template('welcome');
+  }
 }
