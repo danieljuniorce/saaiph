@@ -9,7 +9,9 @@
         }
     ],
     "require": {
-        "vlucas/phpdotenv": "^3.3"
+        "vlucas/phpdotenv": "^3.3",
+        "php-activerecord/php-activerecord": "^1.2",
+        "illuminate/database": "^5.8"
     },
     "autoload": {
         "psr-4": {
