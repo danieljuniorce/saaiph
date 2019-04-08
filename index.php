@@ -6,8 +6,13 @@
     ini_set('display_errors', 'On');
 
     //Load do arquivo .env
-    $dotenv = Dotenv\Dotenv::create ( __DIR__ );
-    $dotenv->load();
+    try {
+      $dotenv = Dotenv\Dotenv::create ( __DIR__ );
+      $dotenv->load();
+    } catch (Exception $e) {
+
+    }
+
 
     //Carregando configuração Database
     \Database\Config::getInstance();

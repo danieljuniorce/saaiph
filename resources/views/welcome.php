@@ -1,6 +1,6 @@
 <div class="container mt-auto mb-auto">
   <div class="text-center mt-5">
-    <img src="<?=\Core\Source::asset('img/logo.png');?>" alt="" height="150px" width="150px">
+    <img src="<?=$this->asset('img/logo.png');?>" alt="" height="150px" width="150px">
   </div>
   <h1 class="text-center mt-3">STAR SOLUTION</h1>
 

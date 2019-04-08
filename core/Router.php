@@ -95,7 +95,7 @@ class Router {
       }
     }
     if ($return === 0) {
-      \Core\Source::template('404');
+      \Core\Source::getInstance()->view('404');
     }
   }
   //Armazenando em array os link enviados por GET;
