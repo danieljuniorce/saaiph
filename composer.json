@@ -17,9 +17,9 @@
         "psr-4": {
             "Core\\": "Core/",
             "Database\\": "Database/",
-            "Controllers\\": "App/Controllers",
-            "Models\\": "App/Models",
-            "Security\\": "App/Security"
+            "Controllers\\": "App/Controllers/",
+            "Models\\": "App/Models/",
+            "Security\\": "App/Security/"
         }
     }
 }

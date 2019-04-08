@@ -81,7 +81,7 @@ class Router {
           $action = $controllerAndAction[1];
 
           //Instanciando a classe e action e paramentros das Classes Controllers
-          call_user_func_array(array($controller, $action), $params);
+          call_user_func_array(array(new $controller(), $action), $params);
           $return = 1;
         } else {
           //Função simples de manipulação via Router/web.php;

@@ -6,10 +6,10 @@ class homeController extends Source
 {
   public function index()
   {
-    Source::template('welcome');
+    $this->template('welcome');
   }
   public function teste()
   {
-    Source::template('welcome');
+    $this->template('welcome');
   }
 }

@@ -1,7 +1,3 @@
-<?php
-  //Don´t Remove
-  use \Core\Source;
-?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
