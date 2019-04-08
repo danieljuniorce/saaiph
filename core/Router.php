@@ -4,8 +4,8 @@ namespace Core;
 class Router {
   private $get;
   private $post;
-
   //Instancia de classe pelo padrão singleton da classe Router;
+
   public static function getInstance()
   {
     static $inst = null;
@@ -14,6 +14,7 @@ class Router {
     }
     return $inst;
   }
+
   //Carregando as funções de manipulação de rotas;
   public function loadRouter()
   {
@@ -24,8 +25,8 @@ class Router {
   //Carregamento do arquivo de rotas;
   public function loadFileConfigRouter($file)
   {
-    if (\file_exists('Router/'.$file.'.php')) {
-      require ('Router/'.$file.'.php');
+    if (\file_exists('router/'.$file.'.php')) {
+      require ('router/'.$file.'.php');
     }
   }
 
@@ -47,6 +48,7 @@ class Router {
         $type = $this->post;
         break;
     }
+
     //Navegando entre as urls pre escritas no arquivo /Router/web.php
     foreach ($type as $pt => $func) {
       $pattern = preg_replace('(\{[a-z0-9]{0,}\})', '([a-z0-9]{0,})', $pt);

@@ -19,7 +19,6 @@ class Load
   public function runProject()
   {
     \Core\Router::getInstance()->loadRouter();
-    \Core\Source::getInstance();
   }
 }
 ?>

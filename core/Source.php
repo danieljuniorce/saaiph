@@ -18,16 +18,16 @@ class Source
     $configTemplate = explode('#', $viewAndPaste);
 
     if (count($configTemplate) > 1) {
-      include './Resources/views/'.$configTemplate[0].'/'.$configTemplate[1].'.php';
+      include './resources/views/'.$configTemplate[0].'/'.$configTemplate[1].'.php';
     } else {
-      include './Resources/views/'.$viewAndPaste.'.php';
+      include './resources/views/'.$viewAndPaste.'.php';
     }
   }
 
   //Carregando template;
   public function template($viewAndPaste, $datas = array())
   {
-    include './Resources/views/layout/app.php';
+    include './resources/views/layout/app.php';
   }
 
   //Carregamento do template e da View
@@ -37,14 +37,14 @@ class Source
     $configTemplate = explode('#', $viewAndPaste);
 
     if (count($configTemplate) > 1) {
-      include './Resources/views/'.$configTemplate[0].'/'.$configTemplate[1].'.php';
+      include './resources/views/'.$configTemplate[0].'/'.$configTemplate[1].'.php';
     } else {
-      include './Resources/views/'.$viewAndPaste.'.php';
+      include './resources/views/'.$viewAndPaste.'.php';
     }
   }
 
   public function asset($component)
   {
-    echo $_ENV['HOST'].'Resources/'.$component.'"';
+    echo $_ENV['HOST'].'resources/'.$component.'"';
   }
 }
