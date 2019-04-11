@@ -21,5 +21,8 @@
             "Models\\": "app/Models/",
             "Security\\": "app/Security/"
         }
+    },
+    "scripts":{
+        "server":"php -S localhost:8080"
     }
 }

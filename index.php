@@ -10,12 +10,12 @@
       $dotenv = Dotenv\Dotenv::create ( __DIR__ );
       $dotenv->load();
     } catch (Exception $e) {
-
+      //desativa em produção o .env
     }
 
 
     //Carregando configuração Database
-    \Database\Config::getInstance();
+    $db = new \Database\Config();
 
     //Instanciando a classe Load;
     \Core\Load::getLoad()->runProject();

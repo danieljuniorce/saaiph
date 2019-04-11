@@ -22,9 +22,8 @@
       </ul>
     </div>
   </nav>
-
   <div class="text-center fixed-bottom mb-3">
     <hr class="container">
-    <p class="mt-2">LICENSE MIT - 2019 &copy; STAR FRAMEWORK</p>
+    <p class="mt-2">LICENSE MIT - &copy; 2019 DANIEL SOUZA</p>
   </div>
 </div>

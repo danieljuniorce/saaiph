@@ -4,7 +4,6 @@ namespace Core;
 class Router {
   private $get;
   private $post;
-  //Instancia de classe pelo padrão singleton da classe Router;
 
   public static function getInstance()
   {
@@ -36,7 +35,8 @@ class Router {
     $return = 0;
 
     //GET url enviado e configurado pelo arquivo .htaccess;
-    $url = (isset($_GET['url']) ? $_GET['url'] : '');
+    $url = explode('index.php', $_SERVER['PHP_SELF']);
+    $url = end($url);
 
     //Verificação de qual method foi enviado GET ou POST
     switch ($_SERVER['REQUEST_METHOD']) {
