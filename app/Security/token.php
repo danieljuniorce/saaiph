@@ -3,6 +3,6 @@ namespace Security;
 
 class Token
 {
-  
+
 }
 ?>

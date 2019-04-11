@@ -6,6 +6,7 @@ class Config
   public function __construct()
   {
     $capsule = new Capsule;
+    //Alterar o array de conexão ao enviar para server de produção.
     $capsule->addConnection([
         'driver'    => $_ENV['DB_DRIVER'],
         'host'      => $_ENV['DB_HOST'],
@@ -17,14 +18,6 @@ class Config
         'prefix'    => '',
     ]);
     $capsule->bootEloquent();
-  }
-  public static function getInstance()
-  {
-    static $inst = null;
-    if ($inst === null) {
-      $inst = new Config();
-    }
-    return $inst;
   }
 
 }
