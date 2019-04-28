@@ -3,14 +3,6 @@ namespace Core;
 
 class Source
 {
-  public static function getInstance()
-  {
-    static $inst = null;
-    if ($inst === null) {
-      $inst = new Source();
-    }
-    return $inst;
-  }
   //Utilização da View
   public function view($viewAndPaste, $datas = array())
   {

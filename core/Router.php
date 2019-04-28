@@ -5,15 +5,6 @@ class Router {
   private $get;
   private $post;
 
-  public static function getInstance()
-  {
-    static $inst = null;
-    if ($inst === null) {
-      $inst = new Router();
-    }
-    return $inst;
-  }
-
   //Carregando as funções de manipulação de rotas;
   public function loadRouter()
   {
@@ -97,7 +88,8 @@ class Router {
       }
     }
     if ($return === 0) {
-      \Core\Source::getInstance()->view('404');
+      $source = new \Core\Source();
+      $source->view('404');
     }
   }
   //Armazenando em array os link enviados por GET;

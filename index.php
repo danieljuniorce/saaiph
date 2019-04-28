@@ -18,5 +18,6 @@
     $db = new \Database\Config();
 
     //Instanciando a classe Load;
-    \Core\Load::getLoad()->runProject();
+    $core = new \Core\Load;
+    $core->runProject();
 ?>
