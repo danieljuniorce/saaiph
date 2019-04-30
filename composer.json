@@ -1,7 +1,10 @@
 {
-    "name": "root/project-api-base",
-    "description": "ESTUDO",
+    "name": "starsolution/framework",
+    "description": "Framework simples para criação web.",
     "license": "MIT",
+    "version": "2.0",
+    "type": "library",
+    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Daniel Souza",
@@ -22,7 +25,10 @@
             "Security\\": "app/Security/"
         }
     },
+    "config": {
+        "optimize-autoloader": true
+    },
     "scripts":{
-        "server":"php -S localhost:8080"
+        "post-install-cmd": "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     }
 }
