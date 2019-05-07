@@ -1,5 +1,5 @@
 <?php
-namespace Core;
+namespace Star\Core;
 
 class Load
 {
@@ -9,7 +9,7 @@ class Load
   */
   public function runProject()
   {
-    $router = new \Core\Router();
+    $router = new \Star\Core\Router();
     $router->loadRouter();
   }
 }

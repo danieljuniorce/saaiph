@@ -1,6 +1,6 @@
 <?php
 namespace Controllers;
-use \Core\Source;
+use \Star\Core\Source;
 use \Models\User;
 class homeController extends Source
 {
@@ -10,6 +10,6 @@ class homeController extends Source
   }
   public function teste()
   {
-    $this->template('welcome');
+    Source::template('welcome');
   }
 }

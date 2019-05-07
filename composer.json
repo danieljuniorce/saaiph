@@ -1,6 +1,6 @@
 {
     "name": "starsolution/framework",
-    "description": "Framework simples para criação web.",
+    "description": "Framework simples para aplicação web.",
     "license": "MIT",
     "version": "2.0",
     "type": "library",
@@ -12,13 +12,12 @@
         }
     ],
     "require": {
-        "vlucas/phpdotenv": "^3.3",
-        "php-activerecord/php-activerecord": "^1.2",
-        "illuminate/database": "^5.8"
+        "illuminate/database": "^5.8",
+        "symfony/dotenv": "^4.2"
     },
     "autoload": {
         "psr-4": {
-            "Core\\": "core/",
+            "Star\\Core\\": "star/Core/",
             "Database\\": "database/",
             "Controllers\\": "app/Controllers/",
             "Models\\": "app/Models/",

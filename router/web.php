@@ -1,4 +1,5 @@
 <?php
+use \Star\Core\Router;
 /*
   Router em POST e GET com as funções $this->get() ou $this->post();
 
@@ -6,5 +7,6 @@
   $this->get('url/{params}', function() {});
   
 */
-$this->get('', 'homeController@index');
+Router::get('/', 'homeController@index');
+Router::get('/teste', 'homeController@teste');
 ?>

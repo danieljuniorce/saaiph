@@ -1,5 +1,5 @@
 <?php
-namespace Core;
+namespace Star\Core;
 
 class Source
 {
