@@ -1,6 +1,9 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/33224319/55686835-8c674a00-593c-11e9-8302-85e8ecc33aea.png"></p>
 
 
+# EM DESENVOLVIMENTO
+### PRÓXIMA VERSÃO 2.0
+
 # STAR SOLUTIONS
 
 >Star Solutions, é o mini framework criado em PHP, buscando facilitar o desenvolvimento e agilizar o processo de criação de Aplicações Web. Star é solução simples e de fácil entendimento, construido utilizando o padrão MVC.
@@ -8,7 +11,7 @@
 ## Instalação
 > Necessário o composer instalado.
 ```
-$ git clone https://github.com/danieljuniorce/solution-php.git && cd solution-php && composer install.
+$ git clone https://github.com/danieljuniorce/solution-php.git StarSolution && cd StarSolution && composer install.
 
 ```
 
