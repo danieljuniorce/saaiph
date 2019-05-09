@@ -1,4 +1,5 @@
 <?php
 require ('star/autoload.php');
 
-echo $language['teste'];
+use Star\Helper;
+

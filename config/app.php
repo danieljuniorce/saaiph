@@ -1,5 +1,6 @@
 
 <?php
+use Dotenv\Dotenv;
 
 return [
     /*
@@ -36,11 +37,11 @@ return [
     |--------------------------------------------------------------------------
     */
     "time_zone" => "America/Sao_Paulo",
-
     /*
     |--------------------------------------------------------------------------
-    |   Select time zone in locale
+    | Read file language
     |--------------------------------------------------------------------------
+    | Change file in require in var in array
     */
-    "language" => "pt-br"
+    "language" => "pt-br",
 ];
