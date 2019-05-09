@@ -26,7 +26,7 @@ $ composer install
 
 ```
 
-###Comandos em Shell
+### Comandos em Shell
 ```
 Ver listas de comando php
 -> php lua list
