@@ -13,12 +13,15 @@
     ],
     "require": {
         "illuminate/database": "^5.8",
-        "vlucas/phpdotenv": "^3.3"
+        "vlucas/phpdotenv": "^3.3",
+        "symfony/console": "^4.2"
     },
     "autoload": {
         "psr-4": {
             "Star\\": "star/",
             "Star\\Core\\": "star/Core/",
+            "Star\\Component\\": "star/Component/",
+            "Star\\Command\\": "star/StarCli/command/", 
             "Database\\": "database/",
             "Controllers\\": "app/Controllers/",
             "Models\\": "app/Models/",
@@ -30,5 +33,8 @@
     },
     "scripts":{
         "post-install-cmd": "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
     }
 }
