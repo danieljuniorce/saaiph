@@ -1,5 +1,5 @@
 <?php
-namespace Core;
+namespace Star\Core;
 
 class Router {
   private $get;
@@ -88,7 +88,7 @@ class Router {
       }
     }
     if ($return === 0) {
-      $source = new \Core\Source();
+      $source = new \Star\Core\Source();
       $source->view('404');
     }
   }

@@ -1,5 +1,8 @@
 <?php
-namespace Core;
+namespace Star\Core;
+
+use \Star\Core\Router;
+use \Star\Core\Database;
 
 class Load
 {
@@ -9,8 +12,11 @@ class Load
   */
   public function runProject()
   {
-    $router = new \Core\Router();
+    $database = new Database();
+    $database->connect();
+
+    $router = new Router();
     $router->loadRouter();
+
   }
 }
-?>
