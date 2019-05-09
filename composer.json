@@ -33,5 +33,8 @@
     },
     "scripts":{
         "post-install-cmd": "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
     }
 }
