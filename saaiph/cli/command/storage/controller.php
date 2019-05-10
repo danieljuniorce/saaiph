@@ -1,7 +1,7 @@
 <?php
 namespace Controllers;
 
-use \Star\Component\Controller;
+use \Saaiph\Component\Controller;
 
 class nameController extends Controller
 {

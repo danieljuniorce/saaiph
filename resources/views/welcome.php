@@ -2,7 +2,7 @@
   <div class="text-center mt-5">
     <img src="<?=$this->asset('img/logo.png');?>" alt="" height="150px" width="150px">
   </div>
-  <h1 class="text-center mt-3">STAR SOLUTION</h1>
+  <h1 class="text-center mt-3">SAAIPH</h1>
 
   <nav class="navbar navbar-expand-lg navbar-light mt-2">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,7 +14,7 @@
           <a class="nav-link" href="#">DOCS</a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="#">GITHUB</a>
+          <a class="nav-link" href="https://github.com/saaiph/saaiph" role="__blank">GITHUB</a>
         </li>
         <li class="nav-item ">
           <a class="nav-link" href="#">ATUALIZAÇÕES</a>

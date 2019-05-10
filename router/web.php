@@ -1,5 +1,5 @@
 <?php
-use \Star\Core\Router;
+use \Saaiph\Core\Router;
 /*
   Router em POST e GET com as funções $this->get() ou $this->post();
 

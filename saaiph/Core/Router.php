@@ -1,5 +1,5 @@
 <?php
-namespace Star\Core;
+namespace Saaiph\Core;
 
 class Router {
   private $get;
@@ -88,7 +88,7 @@ class Router {
       }
     }
     if ($return === 0) {
-      $source = new \Star\Core\Source();
+      $source = new \Saaiph\Core\Source();
       $source->view('404');
     }
   }

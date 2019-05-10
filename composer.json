@@ -1,5 +1,5 @@
 {
-    "name": "starsolution/framework",
+    "name": "saaiph/saaiph",
     "description": "Framework simples para aplicação web.",
     "license": "MIT",
     "version": "2.0",
@@ -18,10 +18,10 @@
     },
     "autoload": {
         "psr-4": {
-            "Star\\": "star/",
-            "Star\\Core\\": "star/Core/",
-            "Star\\Component\\": "star/Component/",
-            "Star\\Command\\": "star/StarCli/command/", 
+            "Saaiph\\": "saaiph/",
+            "Saaiph\\Core\\": "saaiph/Core/",
+            "Saaiph\\Component\\": "saaiph/Component/",
+            "Saaiph\\Command\\": "saaiph/cli/command/", 
             "Database\\": "database/",
             "Controllers\\": "app/Controllers/",
             "Models\\": "app/Models/",

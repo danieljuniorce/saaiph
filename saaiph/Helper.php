@@ -1,5 +1,5 @@
 <?php
-namespace Star;
+namespace Saaiph;
 
 class Helper
 {

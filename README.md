@@ -2,7 +2,7 @@
 
 > 
 
-# STAR SOLUTIONS
+# SAAIPH
 
 >Star Solutions, é o mini framework criado em PHP, buscando facilitar o desenvolvimento e agilizar o processo de criação de Aplicações Web. Star é solução simples e de fácil entendimento, construido utilizando o padrão MVC.
 
@@ -12,11 +12,11 @@
 ```
 No seu terminal usem o comandos a seguir . . . 
 
-$ git clone https://github.com/danieljuniorce/StarSolution.git starsolution
+$ git clone https://github.com/danieljuniorce/StarSolution.git saaiph
 
 Acessando a pasta do projeto . . .
 
-$ cd starsolution
+$ cd saaiph
 
 Instalando a depedências, usando o gerenciado de pacote Composer . . .
 

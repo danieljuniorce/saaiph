@@ -1,8 +1,8 @@
 <?php
-namespace Star\Core;
+namespace Saaiph\Core;
 
-use \Star\Core\Router;
-use \Star\Core\Database;
+use \Saaiph\Core\Router;
+use \Saaiph\Core\Database;
 
 class Load
 {

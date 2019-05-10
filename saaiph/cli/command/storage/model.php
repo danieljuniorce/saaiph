@@ -1,7 +1,7 @@
 <?php
 namespace Models;
 
-use \Star\Component\Model;
+use \Saaiph\Component\Model;
 
 class nameModel extends Model
 {

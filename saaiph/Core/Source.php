@@ -1,5 +1,5 @@
 <?php
-namespace Star\Core;
+namespace Saaiph\Core;
 
 class Source
 {

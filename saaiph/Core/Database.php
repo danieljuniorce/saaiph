@@ -1,5 +1,5 @@
 <?php
-namespace Star\Core;
+namespace Saaiph\Core;
 
 use Illuminate\Database\Capsule\Manager as Capsule;
 class Database

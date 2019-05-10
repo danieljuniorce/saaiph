@@ -1,5 +1,5 @@
 <?php
-namespace Star\Component;
+namespace Saaiph\Component;
 
 class Controller
 {

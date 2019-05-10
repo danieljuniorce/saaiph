@@ -21,5 +21,5 @@ global $language;
 $language = require "language/{$app['language']}.php";
 
 /* Load do Framework */
-$core = new \Star\Core\Load();
+$core = new \Saaiph\Core\Load();
 $core->runProject();

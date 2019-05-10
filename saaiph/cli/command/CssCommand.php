@@ -1,7 +1,7 @@
 <?php
-namespace Star\Command;
+namespace Saaiph\Command;
 
-use Star\Helper;
+use Saaiph\Helper;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

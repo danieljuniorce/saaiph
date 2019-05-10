@@ -1,2 +1,2 @@
 <?php
-require ('star/autoload.php');
+require ('saaiph/autoload.php');
