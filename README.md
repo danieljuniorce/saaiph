@@ -1,15 +1,28 @@
-<p align="center"><img src="https://user-images.githubusercontent.com/33224319/55686835-8c674a00-593c-11e9-8302-85e8ecc33aea.png"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/33224319/57905337-95f1a500-784c-11e9-83c2-34c96465f5fd.jpg"></p>
 
-> 
+<p align="center">
+    <a href="https://github.com/saaiph/saaiph/releases">
+        <img src="https://img.shields.io/badge/Release-v1.5-green.svg">
+    </a>
+    <a href="http://php.net">
+        <img src="https://img.shields.io/badge/PHP-7.1.2-purple.svg">
+    </a>
+        <a href="https://github.com/saaiph/saaiph/releases">
+        <img src="https://img.shields.io/badge/Build-Success-Green.svg">
+    </a>
+    <a href="https://lbesson.mit-license.org/">
+        <img src="https://img.shields.io/badge/License-MIT-blue.svg">
+    </a>
 
-# SAAIPH
+</p>
 
 >Star Solutions, é o mini framework criado em PHP, buscando facilitar o desenvolvimento e agilizar o processo de criação de Aplicações Web. Star é solução simples e de fácil entendimento, construido utilizando o padrão MVC.
 
 
 ## Instalação
 > Necessário o composer instalado. https://getcomposer.org
-```
+
+```shell
 No seu terminal usem o comandos a seguir . . . 
 
 $ git clone https://github.com/danieljuniorce/StarSolution.git saaiph
@@ -27,22 +40,22 @@ $ composer install
 ```
 
 ### Comandos em Shell
-```
-Ver listas de comando php
--> php lua list
+```shell
+//Ver listas de comando php
+$ php lua list
 
-Iniciar o servidor local
--> php lua serve
+//Iniciar o servidor local
+$ php lua serve
 
-Criar um novo controller
--> php lua make:controller nameController
+//Criar um novo controller
+$ php lua make:controller nameController
 
-Criar um novo model
--> php lua make:model Model
+//Criar um novo model
+$ php lua make:model Model
 ```
 
 ### Criando Router
-```
+```php
 //Router instanciando controller com uma action
 Router::get("url/{param}", "Controller@Action");
 Router::post("url/{param}", "Controller@Action");
