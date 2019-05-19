@@ -1,5 +1,5 @@
 <?php
-use \Saaiph\Core\Router;
+use \Saaiph\Router\Router;
 /*
   Router em POST e GET com as funções $this->get() ou $this->post();
 
@@ -8,5 +8,5 @@ use \Saaiph\Core\Router;
   
 */
 Router::get('/', 'homeController@index');
-Router::get('/teste', 'homeController@teste');
+Router::get('/teste/{id}', 'homeController@teste');
 ?>

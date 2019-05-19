@@ -11,6 +11,6 @@ class homeController extends Source
   }
   public function teste()
   {
-    Source::template('welcome');
+    Source::view('teste');
   }
 }
