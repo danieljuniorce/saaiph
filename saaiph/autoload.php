@@ -23,3 +23,6 @@ $language = require "language/{$app['language']}.php";
 /* Load do Framework */
 $core = new \Saaiph\Core\Load();
 $core->runProject();
+
+use Saaiph\Router\Router;
+new Router(__DIR__."/../router/web.php", true, "\Controllers\\");

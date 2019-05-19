@@ -1,7 +1,6 @@
 <?php
 namespace Saaiph\Core;
 
-use \Saaiph\Core\Router;
 use \Saaiph\Core\Database;
 
 class Load
@@ -14,9 +13,5 @@ class Load
   {
     $database = new Database();
     $database->connect();
-
-    $router = new Router();
-    $router->loadRouter();
-
   }
 }
