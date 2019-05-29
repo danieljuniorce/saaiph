@@ -1,11 +1,11 @@
 <?php
 namespace Controllers;
-use \Saaiph\Core\Source;
-use \Models\User;
-class homeController extends Source
+use Controllers\Controller;
+
+class homeController extends Controller
 {
   public function index()
   {
-    $this->template('welcome');
+    Return $this->view('welcome');
   }
 }
