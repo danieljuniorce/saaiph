@@ -2,7 +2,6 @@
     "name": "saaiph/saaiph",
     "description": "Framework simples para aplicação web.",
     "license": "MIT",
-    "version": "2.0",
     "type": "library",
     "minimum-stability": "stable",
     "authors": [
@@ -15,7 +14,8 @@
         "illuminate/database": "^5.8",
         "vlucas/phpdotenv": "^3.3",
         "symfony/console": "^4.2",
-        "saaiph/router": "dev-master"
+        "saaiph/router": "dev-master",
+        "duncan3dc/blade": "^4.5"
     },
     "autoload": {
         "psr-4": {

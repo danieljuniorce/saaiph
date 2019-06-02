@@ -1,11 +1,21 @@
 <?php
 namespace Controllers;
-use \Saaiph\Core\Source;
-use \Models\User;
-class homeController extends Source
+use Controllers\Controller;
+
+class homeController extends Controller
 {
   public function index()
   {
-    $this->template('welcome');
+      if (verify_token($_POST['token'])) {
+          echo 'Deu true';
+      } else {
+          echo 'Deu false';
+      }
+    Return $this->view('welcome');
+  }
+
+  public function teste()
+  {
+      echo 'Function teste';
   }
 }

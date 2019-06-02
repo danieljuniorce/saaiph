@@ -6,23 +6,15 @@ require 'vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::create(__DIR__."/..");
 $dotenv->load();
 
-/* Require do array com as configurações */
-global $app;
-$app = require(__DIR__.'/../config/app.php');
-
-//Active debug in code;
-ini_set('display_errors', $app['debug']);
+require 'hooks.php';
+global $configs;
+use Saaiph\Router\Router;
 
 //Set time_zone
-new DateTimeZone($app['time_zone']);
-
-//Require in file
-global $language;
-$language = require "language/{$app['language']}.php";
+new DateTimeZone($configs['app']['time_zone']);
 
 /* Load do Framework */
 $core = new \Saaiph\Core\Load();
 $core->runProject();
 
-use Saaiph\Router\Router;
 new Router(__DIR__."/../router/web.php", true, "\Controllers\\");
