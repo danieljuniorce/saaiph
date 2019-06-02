@@ -8,5 +8,4 @@ use \Saaiph\Router\Router;
   
 */
 Router::get('/', 'homeController@index');
-Router::get('/teste/{id}', 'homeController@teste');
 ?>
