@@ -42,16 +42,16 @@ $ composer install
 ### Comandos em Shell
 ```shell
 //Ver listas de comando php
-$ php lua list
+$ php moon list
 
 //Iniciar o servidor local
-$ php lua serve
+$ php moon serve
 
 //Criar um novo controller
-$ php lua make:controller nameController
+$ php moon make:controller nameController
 
 //Criar um novo model
-$ php lua make:model Model
+$ php moon make:model Model
 ```
 
 ### Criando Router
@@ -68,6 +68,8 @@ Router::post("url/{param}", function($arg) {
     echo "param: {$arg['param']}";
 });
 ```
+## Saaiph utiliza o Blade Template Engine
+Documentação no site do Laravel https://laravel.com/docs/5.8/blade
 
 ## Bibliotecas de terceiros
 1. EloquentORM - Laravel
