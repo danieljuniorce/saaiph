@@ -13,7 +13,7 @@
     "require": {
         "illuminate/database": "^5.8",
         "vlucas/phpdotenv": "^3.3",
-        "symfony/console": "^4.2",
+        "symfony/console": "^5.0.0",
         "saaiph/router": "dev-master",
         "duncan3dc/blade": "^4.5"
     },
